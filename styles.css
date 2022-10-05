@@ -1,0 +1,476 @@
+body {
+  padding: 50px;
+  font-family: 'Gemunu Libre', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 15px;
+  box-shadow: 0 2px rgb(0, 0, 0, 0.15);
+}
+
+.content-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.game-container {
+  display: flex;
+  /* width: 400px; */
+  justify-content: center;
+  flex-flow: column wrap;
+  row-gap: 20px;
+  align-content: center;
+  border-style: solid;
+  border-color: beige;
+  border-width: 2px;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgb(240, 240, 239);
+  box-shadow: inset 0 1px 0 #4a4a4a, inset 0 -3px 0 #4a4a4a;
+}
+
+.description {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.color-h1 {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  padding: 10px;
+}
+
+#text-current-color {
+  padding:20px;
+  text-align: center;
+}
+
+.game-buttons {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.start-container {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.points-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#points-counter {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  width: 100px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-game {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 17px;
+  background-color: red;
+  color: white;
+  box-shadow: 3px 5px rgb(11, 11, 11, 0.15);
+  width: 100px;
+  border-radius: 50px;
+}
+
+#start-game:active {
+  box-shadow: none;
+}
+
+.score-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.high-score-container {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+#high-score {
+  font-size: 35px;
+  color: crimson;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+}
+
+.first-row {
+  display: flex;
+  column-gap: 25px;
+  justify-content: space-around;
+}
+
+.second-row {
+  display: flex;
+  column-gap: 25px;
+  justify-content: space-around;
+}
+.third-row {
+  display: flex;
+  column-gap: 25px;
+  justify-content: space-around;
+}
+
+#red-btn {
+  background-color: crimson;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#red-btn.hasactive:active {
+  top: 10px;
+  background-color: #a02702;
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#blue-btn {
+  background-color: darkblue;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#blue-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(0, 0, 74);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#green-btn {
+  background-color: green;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#green-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(0, 77, 0);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#yellow-btn {
+  background-color: gold;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#yellow-btn.hasactive:active {
+  top: 10px;
+  background-color: rgba(210, 210, 0, 0.685);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#purple-btn {
+  background-color: purple;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#purple-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(71, 0, 71);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#black-btn {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#black-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(11, 11, 11);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#orange-btn {
+  background-color: orange;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#orange-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(179, 117, 0);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#brown-btn {
+  background-color: sienna;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#brown-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(111, 29, 29);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}
+
+#pink-btn {
+  background-color: pink;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #ffedd4;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#pink-btn.hasactive:active {
+  top: 10px;
+  background-color: rgb(184, 122, 132);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #ffedd4;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #ffedd4;
+}

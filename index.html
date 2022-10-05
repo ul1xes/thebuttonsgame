@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Buttons Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-container">
+        <div class="description">
+          <p>
+            Welcome to <strong>The Buttons Game.</strong> Choose the right
+            color.
+          </p>
+        </div>
+        <div class="color-h1">
+          <h1 id="text-current-color"></h1>
+        </div>
+        <div class="game-container">
+          <div class="first-row">
+            <div class="items">
+              <button class="game-btn" id="red-btn"></button>
+            </div>
+            <div class="items">
+              <button class="game-btn" id="blue-btn"></button>
+            </div>
+            <div class="items">
+              <button class="game-btn" id="green-btn"></button>
+            </div>
+          </div>
+          <div class="second-row">
+            <div class="items">
+              <button class="game-btn" id="yellow-btn"></button>
+            </div>
+            <div class="items">
+              <button class="game-btn" id="purple-btn"></button>
+            </div>
+            <div class="items">
+              <button class="game-btn" id="black-btn"></button>
+            </div>
+          </div>
+          <div class="third-row">
+            <div class="items">
+              <button class="game-btn" id="orange-btn"></button>
+            </div>
+            <div class="items">
+              <button class="game-btn" id="brown-btn"></button>
+            </div>
+            <div class="items">
+              <button class="game-btn" id="pink-btn"></button>
+            </div>
+          </div>
+        </div>
+        <div class="game-buttons">
+          <div class="start-container">
+            <button id="start-game">Start Game</button>
+          </div>
+          <div class="countdown-container">
+            <div id="countdown"></div>
+          </div>
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="points-container">
+        <div class="counter-container">
+          <h2 id="points-counter"></h2>
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="score-container">
+        <div class="high-score-container">
+          <h2 id="high-score"></h2>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
